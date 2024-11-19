@@ -2,20 +2,19 @@
   "name": "a11y-checker",
   "displayName": "Accessibility Checker",
   "description": "A Visual Studio Code extension to check HTML and JSX for accessibility issues.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Kevin Uehara",
     "email": "uehara.kevin@gmail.com"
   },
+  "publisher": "a11yChecker",
   "repository": "https://github.com/kevinuehara/a11y-checker",
   "engines": {
     "vscode": "^1.95.0"
   },
+  "icon": "images/icon.png",
   "categories": [
-    "Extension Packs",
-    "vscode extension",
-    "a11y",
-    "Acessibility"
+    "Extension Packs"
   ],
   "activationEvents": [
     "onCommand:extension.checkAccessibility"

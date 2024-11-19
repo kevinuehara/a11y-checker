@@ -33,16 +33,11 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-/**
- * Função de verificação de acessibilidade.
- * Aqui, estamos apenas verificando imagens sem atributo alt,
- * links sem texto significativo e botões sem descrição.
- */
+
 function checkAccessibility(code: string): Array<{ issue: string, line: number, code: string }> {
     const violations: Array<{ issue: string, line: number, code: string }> = [];
     const lines = code.split('\n');
 
-    // Verificar imagens sem o atributo "alt"
     lines.forEach((line, index) => {
         const imgTagRegex = /<img[^>]*>/g;
         const matches = line.match(imgTagRegex);
@@ -60,7 +55,6 @@ function checkAccessibility(code: string): Array<{ issue: string, line: number, 
         }
     });
 
-    // Verificar links sem texto significativo
     lines.forEach((line, index) => {
         const linkTagRegex = /<a[^>]*>/g;
         const matches = line.match(linkTagRegex);
@@ -79,7 +73,6 @@ function checkAccessibility(code: string): Array<{ issue: string, line: number, 
         }
     });
 
-    // Verificar botões sem texto descritivo
     lines.forEach((line, index) => {
         const buttonTagRegex = /<button[^>]*>/g;
         const matches = line.match(buttonTagRegex);
