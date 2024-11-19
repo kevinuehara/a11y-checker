@@ -3,6 +3,10 @@
   "displayName": "Accessibility Checker",
   "description": "A Visual Studio Code extension to check HTML and JSX for accessibility issues.",
   "version": "0.0.1",
+  "author": {
+    "name": "Kevin Uehara",
+    "email": "uehara.kevin@gmail.com"
+  },
   "engines": {
     "vscode": "^1.95.0"
   },
