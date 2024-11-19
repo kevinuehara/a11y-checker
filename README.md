@@ -23,8 +23,9 @@ The **a11y checker** is a Visual Studio Code extension that helps developers ens
 
 1. Open **Visual Studio Code**.
 2. Go to the **Extensions** view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for **Accessibility Checker** in the Extensions Marketplace.
+3. Search for **a11y checker Checker** in the Extensions Marketplace.
 4. Click the **Install** button to install the extension.
+5. Search by **Check Accessibility** using `CTRL + SHIFT + P` or `CMD + SHIFT + P` on mac.
 
 Alternatively, you can install the extension manually by cloning the repository and running it locally:
 
